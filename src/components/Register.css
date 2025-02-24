@@ -1,0 +1,149 @@
+.register-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3e3b3b;
+    padding: 20px;
+}
+
+.register-form {
+    background-color: #2c2929;
+    border-radius: 1px;
+    padding: 40px;
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.register-form::before {
+    content: '';
+    background-image: url('https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 175px;
+    height: 51px;
+    margin-bottom: 30px;
+}
+
+.profile-label {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* border: 3px solid #dbdbdb; */
+    padding: 2px;
+    transition: all 0.3s ease;
+}
+
+.profile-image:hover {
+    border-color: #a8a8a8;
+}
+
+.register-form input:not([type="file"]) {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #342d2d;
+    font-size: 14px;
+    /* color: #262626; */
+}
+
+.register-form input:focus {
+    outline: none;
+    border-color: #a8a8a8;
+    /* background-color: #ffffff; */
+}
+
+.register-form input::placeholder {
+    color: #8e8e8e;
+}
+
+/* Style for the submit button to match Instagram's blue */
+.register-form button {
+    width: 100%;
+    padding: 7px 16px;
+    background-color: #599538;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+    background-color: #44a0677e;
+}
+
+.register-form p {
+    margin-top: 20px;
+    color: #8e8e8e;
+    font-size: 14px;
+}
+
+.register-form p span {
+    color: #0095f6;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.register-form p span:hover {
+    color: #1877f2;
+}
+
+@media (max-width: 768px) {
+    .register-container {
+        padding: 10px;
+    }
+    
+    .register-form {
+        padding: 20px;
+    }
+    
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+.register-form input:invalid {
+    border-color: #ed4956;
+}
+
+
+input[type="date"] {
+   
+}
+
+.register-form button[disabled] {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+
+.ant-message {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.ant-message-notice-content {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.register-div{
+    background-image: url(../images/imag3.jpg);
+}
